@@ -1,43 +1,70 @@
-// function pattern1(n){
-//     let rows=n/2+1;
-//     let st=1;
-//     let sp=rows-1;
-//     for(let i=1;i<=rows;i++){
-//         let ans="";
-//         for(let j=1;j<=sp;j++){
-//             ans+=" ";
-//         }
-//         for(let j=1;j<=st;j++){
-//             ans+=j+" ";
-//         }
-//         st+=2;
-//         sp-=1;
-//         console.log(ans);
-//     }
-// }
-// pattern1(9);
-
-
-function pattern1(n){
-    let rows=2*n-1;
-    let st=1;
-    let sp=n-1;
-    for(let i=1;i<=rows;i++){
-        let ans="";
-        for(let j=1;j<=sp;j++){
-            ans+=" ";
+function printPattern(rows){
+    for(let i=0;i<rows;i++){
+        let str="";
+        //adding leading spaces 
+        for(let j=0;j<rows-i-1;j++){
+            str+=" ";
         }
-        for(let j=1;j<=st;j++){
-            ans+=j+" ";
+        //printing numbers
+        for(let k=1;k<=2*i+1;k++){
+            str+=k;
         }
-        if(i<n){
-            st+=1;
-            sp-=1;
-        }else{
-            st--;
-            sp++;
-        }
-        console.log(ans);
+        console.log(str);
     }
 }
-pattern1(4);
+printPattern(4);
+
+// function printPattern(rows) {
+//     for (let i = 1; i <= rows; i++) {
+//         let str = " ".repeat(rows - i); // Leading spaces
+//         for (let j = 1; j <= i; j++) {
+//             str += j;
+//         }
+//         console.log(str);
+//     }
+
+//     for (let i = rows - 1; i >= 1; i--) {
+//         let str = " ".repeat(rows - i); // Leading spaces
+//         for (let j = 1; j <= i; j++) {
+//             str += j;
+//         }
+//         console.log(str);
+//     }
+// }
+
+// printPattern(4);
+
+// function printPattern(n) {
+//     // Upper part including the middle row
+//     for (let i = 1; i <= n; i++) {
+//         let str = "";
+//         for (let j = i; j >= 1; j--) {
+//             str += j;
+//         }
+//         console.log(str);
+//     }
+
+//     // Lower part
+//     for (let i = n - 1; i >= 1; i--) {
+//         let str = "";
+//         for (let j = i; j >= 1; j--) {
+//             str += j;
+//         }
+//         console.log(str);
+//     }
+// }
+
+// printPattern(4);
+
+// function printPattern(rows) {
+//     for (let i = 0; i < rows; i++) {
+//         let spaces = " ".repeat(i);
+//         let numbers = "";
+//         for (let j = 1; j <= (2 * (rows - i) - 1); j++) {
+//             numbers += j;
+//         }
+//         console.log(spaces + numbers);
+//     }
+// }
+
+// printPattern(5);
