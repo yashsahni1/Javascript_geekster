@@ -1,18 +1,18 @@
-function printPattern(rows){
-    for(let i=0;i<rows;i++){
-        let str="";
-        //adding leading spaces 
-        for(let j=0;j<rows-i-1;j++){
-            str+=" ";
-        }
-        //printing numbers
-        for(let k=1;k<=2*i+1;k++){
-            str+=k;
-        }
-        console.log(str);
-    }
-}
-printPattern(4);
+// function printPattern(rows){
+//     for(let i=0;i<rows;i++){
+//         let str="";
+//         //adding leading spaces 
+//         for(let j=0;j<rows-i-1;j++){
+//             str+=" ";
+//         }
+//         //printing numbers
+//         for(let k=1;k<=2*i+1;k++){
+//             str+=k;
+//         }
+//         console.log(str);
+//     }
+// }
+// printPattern(4);
 
 // function printPattern(rows) {
 //     for (let i = 1; i <= rows; i++) {
