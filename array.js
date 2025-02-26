@@ -21,11 +21,12 @@
 
 // arr.push({name:"test6",score:600});
 // console.log(arr);
-// arr.pop();
+// let popObject1=arr.pop();
+// console.log(popObject1);
 // console.log(arr);
 // arr.unshift({name:"test6",score:600});
 // console.log(arr);
-// arr.shift({name:"test6",score:600});
+// arr.shift();
 // console.log(arr);
 // arr.reverse();
 // console.log(arr);
@@ -38,7 +39,7 @@
 // console.log(newSlicedArray2);
 // //new array
 //modifies the original array and delete the inbetween elements.........................
-
+// console.log(arr);
 // arr.splice(1,3,2,3,4);
 // console.log(arr);
 

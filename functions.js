@@ -70,10 +70,10 @@
 //benefits of using iife functions
 
 //basically iife function helps to avoid global scope pollution by preventing the variable not to accessible
-//outside the functions
+//outside the functions and thus preventing overwritten of a variable .
 
-(()=>{
-    var message="hello world you are good";
-    console.log(message);
-})();
-console.log(message);
+// (()=>{
+//     var message="hello world you are good";
+//     console.log(message);
+// })();
+// console.log(message);//undefined
